@@ -9,6 +9,8 @@ module "bu_log_bucket" {
   create_kms_key                = false
   expiration_days               = 365
   bucket_key_enabled            = false
+  create_read_only_policy  = false
+  create_read_write_policy = false
 
   tags = {
     Name          = each.value.name
