@@ -11,7 +11,10 @@ module "bu_log_bucket" {
   bucket_key_enabled            = false
 
   tags = {
-    Service     = each.value.tag
-    Environment = var.environment
+    Name          = each.value.name
+    Prefix        = var.prefix
+    Service       = each.value.tag
+    Region        = each.value.region
+    Environment   = var.environment
   }
 }
