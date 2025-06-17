@@ -13,13 +13,14 @@ This repository is used to simulate and verify implementation steps before apply
 
 
 ## 🧱 Structure
+```
 .
 ├── .github/
 │   └── workflows/          # GitHub Actions workflows
 ├── modules/                # Terraform modules (e.g., s3)
 ├── services/               # Service-specific implementations (e.g., bu-logging)
 └── README.md
-
+```
 
 ## ⚙️ Stack Used
 
